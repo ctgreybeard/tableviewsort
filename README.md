@@ -40,5 +40,49 @@ Added the code to load the names into an array. This really has nothing to do wi
 
 The next branch is TableView.
 
+### Branch: TableView
+
+We add the subClass for the TableView, TableView itself, the ArrayController, and the Add button which adds entries into the names array. Basic Cocoa Bindings is set up. The Table View shows names and numbers as they are added.
+
+* Add new Class file NameListView. We don't do anything inside here now, that happens later.
+
+* Add the TableView in Interface Builder. Two columns called Name and Num. The size or positioning doesn't matter much. Leave room for the Add button.
+
+* Add the Array Controller. Just drag one from the Object Library. I dropped this one right below the Font Manager.
+
+* Make the initial Bindings using Interface Builder. Start by selecting the MainMenu.xib file in the Project Navigator.
+
+    * Select the Table View. It is right under the Clip View.
+
+    * Select the Bindings Inspector in the Utilities pane.
+
+    * Under Table Content dropdown the Content item.
+
+    * Select Bind to: Array Controller. It should be already set as the default. `arrangedObjects` is the correct key.
+
+    * Continue down that tree. The next layer is the columns. Fow the two columns change the title to `Name` and `Num` respectively.
+
+    * Two layers down in each column you will find `Table View Cell` (not to be confused with its parent`Table Cell View`!)
+
+    * For the two columns Value binding use Bind to Table Cell View with the key of `objectValue.name` and `objectValue.num` respectively. You will know you are in the right place because `objectValue` is pre-filled into the Model Key Path. Ignore the exclamation in the grey circle.
+
+    * Now select the Array Controller you added before.
+
+    * Under Controller Content dropdown Content Array
+
+        * Here we change the "Bind to" to App Delegate, make sure the check box is checked.
+
+        * The Model Key Path defaults to `self`, erase that and if you type an `o` in that field it should show you `ourData` ... choose that so it appears as Model Key Path.
+
+* Now drag a button to the window, name it `Add`, and using the Interface Builder ctrl-drag to the Application Delegate to create an Action of addOne. Add the code to call `addName()`
+
+If you have loaded the TableView branch this has all been done.
+
+Run the app and click the Add button. Names should appear as you click. They aren't sorted at all, just added in the same order that they appear in the array.
+
+As an aside and slightly related to the sorting notice the two calls inside the `addName()` method of `willChange` and `didChange`. The reason for these is that NSArray is not observable and we need to provide our own notice to the array controller. If the datasource for the Array Controller were something else this might not be required. By providing the notification to the Array Controller it will handle notifying the Table View.
+
+At this point we have a minimally functional Table View. Go take a break ... 
+
 ## Footnotes
 1. https://developer.apple.com/library/mac/technotes/tn2203/_index.html in particular

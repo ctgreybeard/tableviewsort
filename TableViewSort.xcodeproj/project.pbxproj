@@ -14,6 +14,7 @@
 		0F5C282A1A79584A00D53C53 /* XCGLogger.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0F5C28271A79584A00D53C53 /* XCGLogger.swift */; };
 		0F5C282E1A795EC100D53C53 /* givennames.txt in Resources */ = {isa = PBXBuildFile; fileRef = 0F5C282D1A795EC100D53C53 /* givennames.txt */; };
 		0F5C282F1A79619E00D53C53 /* README.md in Resources */ = {isa = PBXBuildFile; fileRef = 0F5C282B1A795A8900D53C53 /* README.md */; };
+		0F5C28311A7966D900D53C53 /* NameListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0F5C28301A7966D900D53C53 /* NameListView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -38,6 +39,7 @@
 		0F5C28271A79584A00D53C53 /* XCGLogger.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = XCGLogger.swift; path = ../XCGLogger.swift; sourceTree = "<group>"; };
 		0F5C282B1A795A8900D53C53 /* README.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
 		0F5C282D1A795EC100D53C53 /* givennames.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = givennames.txt; sourceTree = "<group>"; };
+		0F5C28301A7966D900D53C53 /* NameListView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NameListView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -81,6 +83,7 @@
 			isa = PBXGroup;
 			children = (
 				0F5C280A1A7956C500D53C53 /* AppDelegate.swift */,
+				0F5C28301A7966D900D53C53 /* NameListView.swift */,
 				0F5C280C1A7956C500D53C53 /* Images.xcassets */,
 				0F5C280E1A7956C500D53C53 /* MainMenu.xib */,
 				0F5C28081A7956C500D53C53 /* Supporting Files */,
@@ -216,6 +219,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				0F5C28311A7966D900D53C53 /* NameListView.swift in Sources */,
 				0F5C282A1A79584A00D53C53 /* XCGLogger.swift in Sources */,
 				0F5C280B1A7956C500D53C53 /* AppDelegate.swift in Sources */,
 			);

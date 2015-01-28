@@ -73,5 +73,9 @@ class AppDelegate: NSObject, NSApplicationDelegate {
         return true
     }
 
+    @IBAction func addOne(sender: AnyObject) {
+        logger.info("Add button clicked")
+        addName()
+    }
 }
 
