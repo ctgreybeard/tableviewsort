@@ -10,10 +10,25 @@ import Cocoa
 
 class NameListView: NSView {
 
-    override func drawRect(dirtyRect: NSRect) {
-        super.drawRect(dirtyRect)
+    @IBOutlet weak var ac: NSArrayController!
+    @IBOutlet weak var tv: NSTableView!
 
-        // Drawing code here.
+    let defaultSortDescriptors = [NSSortDescriptor(key: "name", ascending: true)]
+
+    override func awakeFromNib() {
+        logger.debug("Entry")
+
+        if let myAC = ac {
+            logger.info("Bind AC to tv.sortDescriptors")
+            ac.bind("sortDescriptors", toObject: tv, withKeyPath: "sortDescriptors", options: nil)
+        }
+        
+        if let myTV = tv {
+            logger.info("Setting initial TV sort descriptors")
+            myTV.sortDescriptors = defaultSortDescriptors
+        } else {
+            logger.error("tv is nil")
+        }
     }
-    
+
 }

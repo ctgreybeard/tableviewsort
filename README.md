@@ -84,5 +84,41 @@ As an aside and slightly related to the sorting notice the two calls inside the 
 
 At this point we have a minimally functional Table View. Go take a break ... 
 
+### Branch: Sort1
+
+In this step we do two things:
+
+1. We connect the Array Controller to the Table View for the `sortDescriptors` binding. This tells the Array Controller to ask the Table View for the sort descriptors. It's important that the Array Controller does that because it will let us do the "column header click" trick later.
+
+2. Then we tell the Table View what the starting sort descriptors are. 
+
+The order doesn't really matter because in this sequence the Array Controller asks the Table View for the descriptors in the first step and gets none back. But in the second step the Table View notifies the Array Controller that the dscriptors have changed which makes the AC ask the TV for the new descriptors. (I hope you don't mind the abbreviations ...)
+
+If we reverse the order then the TV gets the descriptors first and has them when the AC asks for them in the second step.
+
+In the end it really doesn't matter.
+
+Here are the steps:
+
+* Open the Identity Inspector for the View and change the Class name to `NameListView`. This is not strictly necessary but it allows us to put the code into awakeFromNib which is a good place to put it.
+
+* Remove the drawRect from the NameListView class. We don't need it.
+
+* Create outlets for the Array Controller (I called mine `ac`) and Table View (`tv`)
+
+* Add the definition for default SortDescriptors too. They could be inline in the code but this is more explicit.
+
+* Add the binding code and the sort descriptor setting as shown in the example.
+
+In fact this is completely functional right now. If your app wants to change the sort all it has to do is send the new descriptor to the Table View. But we want to be able to click the column headers. That's next.
+
+But, you may ask, why don't we do this through Interface Builder bindings. I know I asked that.
+
+Setting the Sort Descriptors isn't a binding so that's why that doesn't appear under the Bindings Inspector. But what about the binding of the Array Controller to the Table View? Let's take a look ...
+
+Select the Array Controller in Interface Builder and show the Bindings Inspector. Under `Controller Content Parameters` you will find `Sort Descriptors` ... cool. But the choices don't match our needs. Only the App Delegate is useful that I can tell and we could use that but we would merely be a middleman. The AC would ask the App Delegate and the App Delegate would have to ask the Table View. Not terribly useful. By doing the binding as we do it cuts out the middleman.
+
+The last step is Sort2.
+
 ## Footnotes
 1. https://developer.apple.com/library/mac/technotes/tn2203/_index.html in particular
