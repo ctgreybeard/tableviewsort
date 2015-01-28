@@ -32,5 +32,13 @@ At this point the project was initiated as a new Cocoa Application under Xcode a
 
 The next branch will be Names. Switch to that to add the data source that we will be using.  I also switched this file to be README.md as that works better on Github.
 
+### Branch: Names
+
+Added givennames.txt. Just a list of names I collected from several such lists on the network. It's sorted and unique'd so there are no duplicates.
+
+Added the code to load the names into an array. This really has nothing to do with sorting except that it gives us some more realistic data to look at.
+
+The next branch is TableView.
+
 ## Footnotes
 1. https://developer.apple.com/library/mac/technotes/tn2203/_index.html in particular

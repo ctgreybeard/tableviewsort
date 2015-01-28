@@ -12,7 +12,8 @@
 		0F5C28101A7956C500D53C53 /* MainMenu.xib in Resources */ = {isa = PBXBuildFile; fileRef = 0F5C280E1A7956C500D53C53 /* MainMenu.xib */; };
 		0F5C281C1A7956C500D53C53 /* TableViewSortTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0F5C281B1A7956C500D53C53 /* TableViewSortTests.swift */; };
 		0F5C282A1A79584A00D53C53 /* XCGLogger.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0F5C28271A79584A00D53C53 /* XCGLogger.swift */; };
-		0F5C282C1A795A8900D53C53 /* README.md in Sources */ = {isa = PBXBuildFile; fileRef = 0F5C282B1A795A8900D53C53 /* README.md */; };
+		0F5C282E1A795EC100D53C53 /* givennames.txt in Resources */ = {isa = PBXBuildFile; fileRef = 0F5C282D1A795EC100D53C53 /* givennames.txt */; };
+		0F5C282F1A79619E00D53C53 /* README.md in Resources */ = {isa = PBXBuildFile; fileRef = 0F5C282B1A795A8900D53C53 /* README.md */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -36,6 +37,7 @@
 		0F5C281B1A7956C500D53C53 /* TableViewSortTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TableViewSortTests.swift; sourceTree = "<group>"; };
 		0F5C28271A79584A00D53C53 /* XCGLogger.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = XCGLogger.swift; path = ../XCGLogger.swift; sourceTree = "<group>"; };
 		0F5C282B1A795A8900D53C53 /* README.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
+		0F5C282D1A795EC100D53C53 /* givennames.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = givennames.txt; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -89,6 +91,7 @@
 		0F5C28081A7956C500D53C53 /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				0F5C282D1A795EC100D53C53 /* givennames.txt */,
 				0F5C28271A79584A00D53C53 /* XCGLogger.swift */,
 				0F5C28091A7956C500D53C53 /* Info.plist */,
 			);
@@ -192,7 +195,9 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				0F5C282F1A79619E00D53C53 /* README.md in Resources */,
 				0F5C280D1A7956C500D53C53 /* Images.xcassets in Resources */,
+				0F5C282E1A795EC100D53C53 /* givennames.txt in Resources */,
 				0F5C28101A7956C500D53C53 /* MainMenu.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -211,7 +216,6 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				0F5C282C1A795A8900D53C53 /* README.md in Sources */,
 				0F5C282A1A79584A00D53C53 /* XCGLogger.swift in Sources */,
 				0F5C280B1A7956C500D53C53 /* AppDelegate.swift in Sources */,
 			);
@@ -401,6 +405,7 @@
 				0F5C28211A7956C500D53C53 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		0F5C28221A7956C500D53C53 /* Build configuration list for PBXNativeTarget "TableViewSortTests" */ = {
 			isa = XCConfigurationList;
@@ -409,6 +414,7 @@
 				0F5C28241A7956C500D53C53 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
