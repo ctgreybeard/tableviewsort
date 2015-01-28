@@ -11,8 +11,8 @@
 		0F5C280D1A7956C500D53C53 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 0F5C280C1A7956C500D53C53 /* Images.xcassets */; };
 		0F5C28101A7956C500D53C53 /* MainMenu.xib in Resources */ = {isa = PBXBuildFile; fileRef = 0F5C280E1A7956C500D53C53 /* MainMenu.xib */; };
 		0F5C281C1A7956C500D53C53 /* TableViewSortTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0F5C281B1A7956C500D53C53 /* TableViewSortTests.swift */; };
-		0F5C28291A79584A00D53C53 /* README.rtf in Resources */ = {isa = PBXBuildFile; fileRef = 0F5C28261A79584A00D53C53 /* README.rtf */; };
 		0F5C282A1A79584A00D53C53 /* XCGLogger.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0F5C28271A79584A00D53C53 /* XCGLogger.swift */; };
+		0F5C282C1A795A8900D53C53 /* README.md in Sources */ = {isa = PBXBuildFile; fileRef = 0F5C282B1A795A8900D53C53 /* README.md */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -34,8 +34,8 @@
 		0F5C28151A7956C500D53C53 /* TableViewSortTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = TableViewSortTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		0F5C281A1A7956C500D53C53 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		0F5C281B1A7956C500D53C53 /* TableViewSortTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TableViewSortTests.swift; sourceTree = "<group>"; };
-		0F5C28261A79584A00D53C53 /* README.rtf */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.rtf; path = README.rtf; sourceTree = "<group>"; };
 		0F5C28271A79584A00D53C53 /* XCGLogger.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = XCGLogger.swift; path = ../XCGLogger.swift; sourceTree = "<group>"; };
+		0F5C282B1A795A8900D53C53 /* README.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -59,7 +59,7 @@
 		0F5C27FC1A7956C500D53C53 = {
 			isa = PBXGroup;
 			children = (
-				0F5C28261A79584A00D53C53 /* README.rtf */,
+				0F5C282B1A795A8900D53C53 /* README.md */,
 				0F5C28071A7956C500D53C53 /* TableViewSort */,
 				0F5C28181A7956C500D53C53 /* TableViewSortTests */,
 				0F5C28061A7956C500D53C53 /* Products */,
@@ -193,7 +193,6 @@
 			buildActionMask = 2147483647;
 			files = (
 				0F5C280D1A7956C500D53C53 /* Images.xcassets in Resources */,
-				0F5C28291A79584A00D53C53 /* README.rtf in Resources */,
 				0F5C28101A7956C500D53C53 /* MainMenu.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -212,6 +211,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				0F5C282C1A795A8900D53C53 /* README.md in Sources */,
 				0F5C282A1A79584A00D53C53 /* XCGLogger.swift in Sources */,
 				0F5C280B1A7956C500D53C53 /* AppDelegate.swift in Sources */,
 			);
