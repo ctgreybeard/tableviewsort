@@ -120,5 +120,19 @@ Select the Array Controller in Interface Builder and show the Bindings Inspector
 
 The last step is Sort2.
 
+### Branch: Sort2
+
+This one is easy.
+
+* In Interface Builder select, in turn, the two columns: Name and Num. They are one level below the Table View.
+
+* Use Attributes Inspector under Table Column and enter `name` and `num` as the Sort Key for the appropriate column.
+
+That's it.
+
+Run the app, add a few names, and the names are sorted as they are added and you can click on the column headers to sort either column ascending or descending.
+
+All of this was pretty simple and straight forward. And the only code we needed to add was the binding and maybe the initial Sort Descriptors. Everything elas was done right in Interface Builder.
+
 ## Footnotes
 1. https://developer.apple.com/library/mac/technotes/tn2203/_index.html in particular
